@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d4dd17d1-26b4-4445-9c7a-fe6715c6622c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/$PROJECT_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_1_43.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_2_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/cache/local/BrandCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/cache/local/LocationCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/controller/CacheController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/degrade/IsDegrade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/filter/HystrixRequestContextFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/http/HttpClientUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/hystrix/command/FailureModeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/hystrix/command/GetBrandNameCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/hystrix/command/GetCityNameCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/hystrix/command/GetProductInfoCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/hystrix/command/GetProductInfoFacadeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/hystrix/command/GetProductInfoFromMySQLCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/hystrix/command/GetProductInfosCollapser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/hystrix/command/GetProductInfosCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/hystrix/command/UpdateProductInfoCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/java/com/roncoo/eshop/cache/ha/model/ProductInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/resources/Application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/resources/mybatis/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/test/java/com/roncoo/eshop/cache/ha/CircuitBreakerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/test/java/com/roncoo/eshop/cache/ha/FailureModeCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/test/java/com/roncoo/eshop/cache/ha/HystrixDashboardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/test/java/com/roncoo/eshop/cache/ha/ManualDegradeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/test/java/com/roncoo/eshop/cache/ha/MultiLevelFallbackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/test/java/com/roncoo/eshop/cache/ha/RejectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/test/java/com/roncoo/eshop/cache/ha/RequestCollapserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/test/java/com/roncoo/eshop/cache/ha/StubbedFallbackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache-ha/src/test/java/com/roncoo/eshop/cache/ha/TimeoutTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/configuration/CacheConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/controller/CacheController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/hystrix/command/GetProductInfoCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/hystrix/command/GetProductInfoFromReidsCacheCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/hystrix/command/GetShopInfoFromReidsCacheCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/hystrix/command/SaveProductInfo2ReidsCacheCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/hystrix/command/SaveShopInfo2ReidsCacheCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/kafka/KafkaConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/kafka/KafkaMessageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/listener/InitListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/model/ProductInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/model/ShopInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/prewarm/CachePrewarmThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/rebuild/RebuildCacheQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/rebuild/RebuildCacheThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/service/CacheService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/service/impl/CacheServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/spring/SpringContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/java/com/roncoo/eshop/cache/zk/ZooKeeperSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/resources/Application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/resources/mybatis/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/test/java/com/roncoo/eshop/cache/JedisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-cache/src/test/java/com/roncoo/eshop/cache/ZooKeeperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/controller/ProductInventoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/dao/RedisDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/dao/impl/RedisDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/listener/InitListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/mapper/ProductInventoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/model/ProductInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/request/ProductInventoryCacheRefreshRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/request/ProductInventoryDBUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/request/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/request/RequestQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/service/ProductInventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/service/RequestAsyncProcessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/service/impl/ProductInventoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/service/impl/RequestAsyncProcessServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/thread/RequestProcessorThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/thread/RequestProcessorThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/java/com/roncoo/eshop/inventory/vo/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/resources/Application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/resources/mybatis/ProductInventoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/resources/mybatis/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-inventory/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/src/main/java/com/roncoo/eshop/product/ha/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/src/main/java/com/roncoo/eshop/product/ha/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/src/main/java/com/roncoo/eshop/product/ha/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/src/main/java/com/roncoo/eshop/product/ha/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/src/main/resources/Application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/src/main/resources/mybatis/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-product-ha/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/dependency-reduced-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/src/main/java/com/roncoo/eshop/storm/HotProductTopology.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/src/main/java/com/roncoo/eshop/storm/bolt/LogParseBolt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/src/main/java/com/roncoo/eshop/storm/bolt/ProductCountBolt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/src/main/java/com/roncoo/eshop/storm/http/HttpClientUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/src/main/java/com/roncoo/eshop/storm/spout/AccessLogKafkaSpout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/src/main/java/com/roncoo/eshop/storm/zk/ZooKeeperSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eshop-storm/src/test/java/com/roncoo/eshop/eshop_storm/AppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Main/Mevan/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\java\Mevan\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pCq17mBbAXlrygaDafNUMenbyA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eshop-inventory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roncoo.eshop.inventory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.roncoo.eshop.inventory.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4dd17d1-26b4-4445-9c7a-fe6715c6622c" name="Default Changelist" comment="" />
+      <created>1614697201281</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614697201281</updated>
+      <workItem from="1614697203582" duration="7041000" />
+      <workItem from="1614705369949" duration="89000" />
+    </task>
+    <task id="LOCAL-00001" summary="eshop">
+      <created>1614703584872</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614703584873</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="eshop" />
+    <option name="LAST_COMMIT_MESSAGE" value="eshop" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2177" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1614697678775">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2177" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614697678775" />
+    <state x="1829" y="115" key="CommitChangelistDialog2" timestamp="1614703573684">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1829" y="115" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614703573684" />
+    <state x="2106" y="276" key="FileChooserDialogImpl" timestamp="1614705403862">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2106" y="276" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614705403862" />
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1614704258446">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614704258446" />
+    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1614704258445">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614704258445" />
+    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1614704258444">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614704258444" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1614704258446">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614704258446" />
+    <state x="1829" y="150" key="SettingsEditor" timestamp="1614705457396">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1829" y="150" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614705457396" />
+    <state x="1918" y="242" key="Vcs.Push.Dialog.v2" timestamp="1614703629957">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1918" y="242" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614703629957" />
+    <state x="1946" y="246" width="759" height="548" key="find.popup" timestamp="1614697923483">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1946" y="246" width="759" height="548" key="find.popup/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614697923483" />
+  </component>
+</project>
