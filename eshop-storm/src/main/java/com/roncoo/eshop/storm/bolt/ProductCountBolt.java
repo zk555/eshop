@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.http.NameValuePair;
-import org.apache.http.client.utils.URLEncodedUtils;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.HTTP;
+import org.apache.storm.shade.org.apache.http.NameValuePair;
+import org.apache.storm.shade.org.apache.http.client.utils.URLEncodedUtils;
+import org.apache.storm.shade.org.apache.http.message.BasicNameValuePair;
+import org.apache.storm.shade.org.apache.http.protocol.HTTP;
 import org.apache.storm.shade.org.json.simple.JSONArray;
 import org.apache.storm.task.OutputCollector;
 import org.apache.storm.task.TopologyContext;
@@ -45,7 +45,7 @@ public class ProductCountBolt extends BaseRichBolt {
 		new Thread(new ProductCountThread()).start();
 		new Thread(new HotProductFindThread()).start();
 		
-		// 1、将自己的taskid写入一个zookeeper node中，形成taskid的列表
+		// 1入、将自己的taskid写一个zookeeper node中，形成taskid的列表
 		// 2、然后每次都将自己的热门商品列表，写入自己的taskid对应的zookeeper节点
 		// 3、然后这样的话，并行的预热程序才能从第一步中知道，有哪些taskid
 		// 4、然后并行预热程序根据每个taskid去获取一个锁，然后再从对应的znode中拿到热门商品列表
@@ -90,7 +90,7 @@ public class ProductCountBolt extends BaseRichBolt {
 				try {
 					productCountList.clear();
 					hotProductIdList.clear();
-					
+
 					if(productCountMap.size() == 0) {
 						Utils.sleep(100);
 						continue;
@@ -163,8 +163,8 @@ public class ProductCountBolt extends BaseRichBolt {
 								String cacheServiceURL = "http://192.168.31.179:8080/getProductInfo?productId=" + productCountEntry.getKey();
 								String response = HttpClientUtils.sendGetRequest(cacheServiceURL);
 								
-								List<NameValuePair> params = new ArrayList<NameValuePair>();  
-								params.add(new BasicNameValuePair("productInfo", response));    
+								List<NameValuePair> params = new ArrayList<NameValuePair>();
+								params.add(new BasicNameValuePair("productInfo", response));
 						        String productInfo = URLEncodedUtils.format(params, HTTP.UTF_8);
 								
 								String[] appNginxURLs = new String[]{
