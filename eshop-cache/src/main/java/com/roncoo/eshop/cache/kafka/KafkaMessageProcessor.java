@@ -37,7 +37,7 @@ public class KafkaMessageProcessor implements Runnable {
 		ConsumerIterator<byte[], byte[]> it = kafkaStream.iterator();
         while (it.hasNext()) {
         	String message = new String(it.next().message());
-        	
+			System.out.println(message);
         	// 首先将message转换成json对象
         	JSONObject messageJSONObject = JSONObject.parseObject(message);
         	
@@ -82,7 +82,7 @@ public class KafkaMessageProcessor implements Runnable {
 		ProductInfo existedProductInfo = cacheService.getProductInfoFromReidsCache(productId);
 		
 		if(existedProductInfo != null) {
-			// 比较当前数据的时间版本比已有数据的时间版本是新还是旧
+			// 比较当前数据的时间版本比已有数据的时间版本是新还是旧, 版本旧则不更新
 			try {
 				Date date = sdf.parse(productInfo.getModifiedTime());
 				Date existedDate = sdf.parse(existedProductInfo.getModifiedTime());

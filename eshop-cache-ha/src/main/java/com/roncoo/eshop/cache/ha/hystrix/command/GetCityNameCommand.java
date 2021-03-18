@@ -22,7 +22,7 @@ public class GetCityNameCommand extends HystrixCommand<String> {
 				.andCommandKey(HystrixCommandKey.Factory.asKey("GetCityNameCommand"))
 				.andThreadPoolKey(HystrixThreadPoolKey.Factory.asKey("GetCityNamePool"))
 		        .andCommandPropertiesDefaults(HystrixCommandProperties.Setter()
-		        		.withExecutionIsolationStrategy(ExecutionIsolationStrategy.SEMAPHORE)
+		        		.withExecutionIsolationStrategy(ExecutionIsolationStrategy.SEMAPHORE)  //隔离策略，默认Thread, 信号量适用于本地缓存中适用
 		        		.withExecutionIsolationSemaphoreMaxConcurrentRequests(15)));
 		this.cityId = cityId;
 	}

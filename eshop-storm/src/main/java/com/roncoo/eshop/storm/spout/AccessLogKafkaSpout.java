@@ -6,19 +6,19 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.ArrayBlockingQueue;
 
+import backtype.storm.spout.SpoutOutputCollector;
+import backtype.storm.task.TopologyContext;
+import backtype.storm.topology.OutputFieldsDeclarer;
+import backtype.storm.topology.base.BaseRichSpout;
+import backtype.storm.tuple.Fields;
+import backtype.storm.tuple.Values;
+import backtype.storm.utils.Utils;
 import kafka.consumer.Consumer;
 import kafka.consumer.ConsumerConfig;
 import kafka.consumer.ConsumerIterator;
 import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;
 
-import org.apache.storm.spout.SpoutOutputCollector;
-import org.apache.storm.task.TopologyContext;
-import org.apache.storm.topology.OutputFieldsDeclarer;
-import org.apache.storm.topology.base.BaseRichSpout;
-import org.apache.storm.tuple.Fields;
-import org.apache.storm.tuple.Values;
-import org.apache.storm.utils.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,7 +45,7 @@ public class AccessLogKafkaSpout extends BaseRichSpout {
 	@SuppressWarnings("rawtypes")
 	private void startKafkaConsumer() {
 		Properties props = new Properties();
-        props.put("zookeeper.connect", "192.168.31.187:2181,192.168.31.19:2181,192.168.31.227:2181");
+        props.put("zookeeper.connect", "192.168.1.160:2181,192.168.1.161:2181,192.168.1.162:2181");
         props.put("group.id", "eshop-cache-group");
         props.put("zookeeper.session.timeout.ms", "40000");
         props.put("zookeeper.sync.time.ms", "200");
@@ -104,12 +104,12 @@ public class AccessLogKafkaSpout extends BaseRichSpout {
 				e.printStackTrace();
 			}
 		} else {
-			Utils.sleep(100);  
+			Utils.sleep(100);
 		}
 	}
 	 
 	public void declareOutputFields(OutputFieldsDeclarer declarer) {
-		declarer.declare(new Fields("message"));  
+		declarer.declare(new Fields("message"));
 	}
 	
 }

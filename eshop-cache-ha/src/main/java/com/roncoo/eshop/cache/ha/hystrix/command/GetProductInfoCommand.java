@@ -27,16 +27,16 @@ public class GetProductInfoCommand extends HystrixCommand<ProductInfo> {
 	private Long productId;
 	
 	public GetProductInfoCommand(Long productId) {
-		super(Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("ProductInfoService"))
-				.andCommandKey(KEY)
-				.andThreadPoolKey(HystrixThreadPoolKey.Factory.asKey("GetProductInfoPool"))
+		super(Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("ProductInfoService"))  //Command group ，根据一个服务划分一个线程池，代表线程池
+				.andCommandKey(KEY)  //代码一类command，每个接口对应一个commandKey ，多个commandKey对应一个Command group
+				.andThreadPoolKey(HystrixThreadPoolKey.Factory.asKey("GetProductInfoPool"))  //线程池名称
 				.andThreadPoolPropertiesDefaults(HystrixThreadPoolProperties.Setter()
 						.withCoreSize(3)
 						.withMaximumSize(30) 
 						.withAllowMaximumSizeToDivergeFromCoreSize(true) 
 						.withKeepAliveTimeMinutes(1) 
 						.withMaxQueueSize(12)
-						.withQueueSizeRejectionThreshold(15)) 
+						.withQueueSizeRejectionThreshold(15))
 				.andCommandPropertiesDefaults(HystrixCommandProperties.Setter()
 						.withCircuitBreakerRequestVolumeThreshold(30)
 						.withCircuitBreakerErrorThresholdPercentage(40)

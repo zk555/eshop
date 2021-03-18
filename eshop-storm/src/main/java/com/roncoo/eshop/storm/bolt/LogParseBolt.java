@@ -2,13 +2,13 @@ package com.roncoo.eshop.storm.bolt;
 
 import java.util.Map;
 
-import org.apache.storm.task.OutputCollector;
-import org.apache.storm.task.TopologyContext;
-import org.apache.storm.topology.OutputFieldsDeclarer;
-import org.apache.storm.topology.base.BaseRichBolt;
-import org.apache.storm.tuple.Fields;
-import org.apache.storm.tuple.Tuple;
-import org.apache.storm.tuple.Values;
+import backtype.storm.task.OutputCollector;
+import backtype.storm.task.TopologyContext;
+import backtype.storm.topology.OutputFieldsDeclarer;
+import backtype.storm.topology.base.BaseRichBolt;
+import backtype.storm.tuple.Fields;
+import backtype.storm.tuple.Tuple;
+import backtype.storm.tuple.Values;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,13 +42,13 @@ public class LogParseBolt extends BaseRichBolt {
 		Long productId = uriArgsJSON.getLong("productId"); 
 		
 		if(productId != null) {
-			collector.emit(new Values(productId));  
+			collector.emit(new Values(productId));
 			LOGGER.info("【LogParseBolt发射出去一个商品id】productId=" + productId);  
 		}
 	}
 	
 	public void declareOutputFields(OutputFieldsDeclarer declarer) {
-		declarer.declare(new Fields("productId"));   
+		declarer.declare(new Fields("productId"));
 	}
 
 }

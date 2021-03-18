@@ -1,12 +1,12 @@
 package com.roncoo.eshop.storm;
 
-import org.apache.storm.Config;
-import org.apache.storm.LocalCluster;
-import org.apache.storm.StormSubmitter;
-import org.apache.storm.topology.TopologyBuilder;
-import org.apache.storm.tuple.Fields;
-import org.apache.storm.utils.Utils;
+import backtype.storm.Config;
+import backtype.storm.LocalCluster;
+import backtype.storm.StormSubmitter;
+import backtype.storm.topology.TopologyBuilder;
 
+import backtype.storm.tuple.Fields;
+import backtype.storm.utils.Utils;
 import com.roncoo.eshop.storm.bolt.LogParseBolt;
 import com.roncoo.eshop.storm.bolt.ProductCountBolt;
 import com.roncoo.eshop.storm.spout.AccessLogKafkaSpout;
@@ -27,7 +27,7 @@ public class HotProductTopology {
 				.shuffleGrouping("AccessLogKafkaSpout");  
 		builder.setBolt("ProductCountBolt", new ProductCountBolt(), 2)
 				.setNumTasks(2)
-				.fieldsGrouping("LogParseBolt", new Fields("productId"));  
+				.fieldsGrouping("LogParseBolt", new Fields("productId"));
 		
 		Config config = new Config();
 		
@@ -41,7 +41,7 @@ public class HotProductTopology {
 		} else {
 			LocalCluster cluster = new LocalCluster();
 			cluster.submitTopology("HotProductTopology", config, builder.createTopology());  
-			Utils.sleep(30000); 
+			Utils.sleep(30000);
 			cluster.shutdown();
 		}
 	}

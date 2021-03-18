@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import backtype.storm.task.OutputCollector;
+import backtype.storm.task.TopologyContext;
+import backtype.storm.topology.OutputFieldsDeclarer;
+import backtype.storm.topology.base.BaseRichBolt;
+import backtype.storm.tuple.Tuple;
+import backtype.storm.utils.Utils;
+import com.alibaba.fastjson.JSONArray;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
-import org.apache.storm.shade.org.json.simple.JSONArray;
-import org.apache.storm.task.OutputCollector;
-import org.apache.storm.task.TopologyContext;
-import org.apache.storm.topology.OutputFieldsDeclarer;
-import org.apache.storm.topology.base.BaseRichBolt;
-import org.apache.storm.trident.util.LRUMap;
-import org.apache.storm.tuple.Tuple;
-import org.apache.storm.utils.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.roncoo.eshop.storm.http.HttpClientUtils;
 import com.roncoo.eshop.storm.zk.ZooKeeperSession;
+import storm.trident.util.LRUMap;
 
 /**
  * 商品访问次数统计bolt
@@ -59,7 +59,7 @@ public class ProductCountBolt extends BaseRichBolt {
 		
 		zkSession.acquireDistributedLock();
 		
-		zkSession.createNode("/taskid-list");  
+		zkSession.createNode("/taskid-list");   //保存所有taskId
 		String taskidList = zkSession.getNodeData();
 		LOGGER.info("【ProductCountBolt获取到taskid list】taskidList=" + taskidList);  
 		if(!"".equals(taskidList)) {
@@ -209,7 +209,7 @@ public class ProductCountBolt extends BaseRichBolt {
 						}
 					}
 					
-					Utils.sleep(5000); 
+					Utils.sleep(5000);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -237,7 +237,7 @@ public class ProductCountBolt extends BaseRichBolt {
 					}
 					
 					LOGGER.info("【ProductCountThread打印productCountMap的长度】size=" + productCountMap.size());
-					
+					//获取前top-n的集合 ，
 					for(Map.Entry<Long, Long> productCountEntry : productCountMap.entrySet()) {
 						if(topnProductList.size() == 0) {
 							topnProductList.add(productCountEntry);
@@ -249,7 +249,7 @@ public class ProductCountBolt extends BaseRichBolt {
 							
 							for(int i = 0; i < topnProductList.size(); i++){
 								Map.Entry<Long, Long> topnProductCountEntry = topnProductList.get(i);
-								
+								//找到访问次数 == 新汇总的商品， 插入到当前位置 ，
 								if(productCountEntry.getValue() > topnProductCountEntry.getValue()) {
 									int lastIndex = topnProductList.size() < topn ? topnProductList.size() - 1 : topn - 2;
 									for(int j = lastIndex; j >= i; j--) {
@@ -276,9 +276,9 @@ public class ProductCountBolt extends BaseRichBolt {
 					for(Map.Entry<Long, Long> topnProductEntry : topnProductList) {
 						productidList.add(topnProductEntry.getKey());
 					}
-					
+					//temp ,  1,2,3
 					String topnProductListJSON = JSONArray.toJSONString(productidList);
-					zkSession.createNode("/task-hot-product-list-" + taskid); 
+					zkSession.createNode("/task-hot-product-list-" + taskid);   // 保存热门商品数据
 					zkSession.setNodeData("/task-hot-product-list-" + taskid, topnProductListJSON);
 					LOGGER.info("【ProductCountThread计算出一份top3热门商品列表】zk path=" + ("/task-hot-product-list-" + taskid) + ", topnProductListJSON=" + topnProductListJSON);  
 					

@@ -25,7 +25,7 @@ public class GetBrandNameCommand extends HystrixCommand<String> {
 						.withCoreSize(15)
 						.withQueueSizeRejectionThreshold(10))
 				.andCommandPropertiesDefaults(HystrixCommandProperties.Setter()
-						.withFallbackIsolationSemaphoreMaxConcurrentRequests(15))
+						.withFallbackIsolationSemaphoreMaxConcurrentRequests(15)) //防止多个线程进入fallback逻辑
 				);  
 		this.brandId = brandId;
 	}

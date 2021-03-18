@@ -13,6 +13,9 @@ import com.netflix.hystrix.HystrixCommandKey;
 import com.roncoo.eshop.cache.ha.http.HttpClientUtils;
 import com.roncoo.eshop.cache.ha.model.ProductInfo;
 
+/**
+ * 批量发送，request bath 发送
+ */
 public class GetProductInfosCollapser extends HystrixCollapser<List<ProductInfo>, ProductInfo, Long> {
 
 	private Long productId;

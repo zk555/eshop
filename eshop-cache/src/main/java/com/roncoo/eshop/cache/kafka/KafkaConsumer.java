@@ -34,8 +34,8 @@ public class KafkaConsumer implements Runnable {
         Map<String, List<KafkaStream<byte[], byte[]>>> consumerMap = 
         		consumerConnector.createMessageStreams(topicCountMap);
         List<KafkaStream<byte[], byte[]>> streams = consumerMap.get(topic);
-        
-        for (KafkaStream stream : streams) {
+
+        for (final KafkaStream<byte[], byte[]> stream : streams) {
             new Thread(new KafkaMessageProcessor(stream)).start();
         }
 	}
@@ -46,7 +46,7 @@ public class KafkaConsumer implements Runnable {
 	 */
 	private static ConsumerConfig createConsumerConfig() {
         Properties props = new Properties();
-        props.put("zookeeper.connect", "192.168.31.187:2181,192.168.31.19:2181,192.168.31.227:2181");
+        props.put("zookeeper.connect", "192.168.1.160:2181,192.168.1.161:2181,192.168.1.162:2181");
         props.put("group.id", "eshop-cache-group");
         props.put("zookeeper.session.timeout.ms", "40000");
         props.put("zookeeper.sync.time.ms", "200");
