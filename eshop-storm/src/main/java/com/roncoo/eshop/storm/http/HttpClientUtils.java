@@ -9,16 +9,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.util.EntityUtils;
+import org.apache.storm.shade.org.apache.http.HttpEntity;
+import org.apache.storm.shade.org.apache.http.HttpResponse;
+import org.apache.storm.shade.org.apache.http.NameValuePair;
+import org.apache.storm.shade.org.apache.http.client.HttpClient;
+import org.apache.storm.shade.org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.storm.shade.org.apache.http.client.methods.HttpGet;
+import org.apache.storm.shade.org.apache.http.client.methods.HttpPost;
+import org.apache.storm.shade.org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.storm.shade.org.apache.http.message.BasicNameValuePair;
+import org.apache.storm.shade.org.apache.http.util.EntityUtils;
 
 /**
  * HttpClient工具类
@@ -44,7 +44,7 @@ public class HttpClientUtils {
 		try {
 			// 发送GET请求
 			httpclient = new DefaultHttpClient();
-			HttpGet httpget = new HttpGet(url);  
+			HttpGet httpget = new HttpGet(url);
 			HttpResponse response = httpclient.execute(httpget);
 			
 			// 处理响应
@@ -89,22 +89,22 @@ public class HttpClientUtils {
 	@SuppressWarnings({ "rawtypes", "unchecked", "resource" })
 	public static String sendPostRequest(String url, Map<String,String> map){  
 		HttpClient httpClient = null;  
-        HttpPost httpPost = null;  
+        HttpPost httpPost = null;
         String result = null;  
         
         try{  
-            httpClient = new DefaultHttpClient();  
+            httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);  
             
             //设置参数  
-            List<NameValuePair> list = new ArrayList<NameValuePair>();  
+            List<NameValuePair> list = new ArrayList<NameValuePair>();
             Iterator iterator = map.entrySet().iterator();  
             while(iterator.hasNext()){  
                 Entry<String,String> elem = (Entry<String, String>) iterator.next();  
-                list.add(new BasicNameValuePair(elem.getKey(), elem.getValue()));  
+                list.add(new BasicNameValuePair(elem.getKey(), elem.getValue()));
             }  
             if(list.size() > 0){  
-                UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, "utf-8");    
+                UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list, "utf-8");
                 httpPost.setEntity(entity);  
             }  
             
@@ -112,7 +112,7 @@ public class HttpClientUtils {
             if(response != null){  
                 HttpEntity resEntity = response.getEntity();  
                 if(resEntity != null){  
-                    result = EntityUtils.toString(resEntity, "utf-8");    
+                    result = EntityUtils.toString(resEntity, "utf-8");
                 }  
             }  
         } catch(Exception ex){  
