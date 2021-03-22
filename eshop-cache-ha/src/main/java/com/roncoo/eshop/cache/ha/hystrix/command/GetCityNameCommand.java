@@ -23,7 +23,7 @@ public class GetCityNameCommand extends HystrixCommand<String> {
 				.andThreadPoolKey(HystrixThreadPoolKey.Factory.asKey("GetCityNamePool"))
 		        .andCommandPropertiesDefaults(HystrixCommandProperties.Setter()
 		        		.withExecutionIsolationStrategy(ExecutionIsolationStrategy.SEMAPHORE)
-		        		.withExecutionIsolationSemaphoreMaxConcurrentRequests(15)));
+		        		.withExecutionIsolationSemaphoreMaxConcurrentRequests(15)));// 设置降级机制最⼤并发请求数
 		this.cityId = cityId;
 	}
 	
@@ -31,5 +31,5 @@ public class GetCityNameCommand extends HystrixCommand<String> {
 	protected String run() throws Exception {
 		return LocationCache.getCityName(cityId);
 	}
-	
+
 }

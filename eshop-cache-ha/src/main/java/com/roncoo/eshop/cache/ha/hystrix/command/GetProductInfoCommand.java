@@ -37,10 +37,10 @@ public class GetProductInfoCommand extends HystrixCommand<ProductInfo> {
 						.withKeepAliveTimeMinutes(1) 
 						.withMaxQueueSize(12)
 						.withQueueSizeRejectionThreshold(15)) 
-				.andCommandPropertiesDefaults(HystrixCommandProperties.Setter()
-						.withCircuitBreakerRequestVolumeThreshold(30)
-						.withCircuitBreakerErrorThresholdPercentage(40)
-						.withCircuitBreakerSleepWindowInMilliseconds(3000)
+				.andCommandPropertiesDefaults(HystrixCommandProperties.Setter()//是否允许断路器工作
+						.withCircuitBreakerRequestVolumeThreshold(30)  // 单位时间内流量多大才触发降级
+						.withCircuitBreakerErrorThresholdPercentage(40)  // 错误比例
+						.withCircuitBreakerSleepWindowInMilliseconds(3000) //close -> open）。那么之后在SleepWindowInMilliseconds 时间内，所有经过该断路器的请求全部都会被断路，不调⽤后端服务，直接⾛ fallback 降级机制。
 						.withExecutionTimeoutInMilliseconds(500)
 						.withFallbackIsolationSemaphoreMaxConcurrentRequests(30))
 				);  

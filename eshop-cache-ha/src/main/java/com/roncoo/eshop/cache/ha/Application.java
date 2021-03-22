@@ -46,13 +46,13 @@ public class Application {
         return new DataSourceTransactionManager(dataSource());
     }
     
-    @Bean
-    public FilterRegistrationBean filterRegistrationBean() {
-    	FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(
-    			new HystrixRequestContextFilter());
-    	filterRegistrationBean.addUrlPatterns("/*");
-    	return filterRegistrationBean;
-    }
+//    @Bean
+//    public FilterRegistrationBean filterRegistrationBean() {
+//    	FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(
+//    			new HystrixRequestContextFilter());
+//    	filterRegistrationBean.addUrlPatterns("/*");
+//    	return filterRegistrationBean;
+//    }
     
     @Bean
     public ServletRegistrationBean indexServletRegistration() {

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Future;
 
+import com.roncoo.eshop.cache.ha.hystrix.command.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -11,10 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.netflix.hystrix.HystrixCommand;
 import com.roncoo.eshop.cache.ha.degrade.IsDegrade;
 import com.roncoo.eshop.cache.ha.http.HttpClientUtils;
-import com.roncoo.eshop.cache.ha.hystrix.command.GetBrandNameCommand;
-import com.roncoo.eshop.cache.ha.hystrix.command.GetCityNameCommand;
-import com.roncoo.eshop.cache.ha.hystrix.command.GetProductInfoCommand;
-import com.roncoo.eshop.cache.ha.hystrix.command.GetProductInfosCollapser;
 import com.roncoo.eshop.cache.ha.model.ProductInfo;
 
 /**
@@ -49,16 +46,19 @@ public class CacheController {
 		// 拿到一个商品id
 		// 调用商品服务的接口，获取商品id对应的商品的最新数据
 		// 用HttpClient去调用商品服务的http接口
-		HystrixCommand<ProductInfo> getProductInfoCommand = new GetProductInfoCommand(productId);
-		ProductInfo productInfo = getProductInfoCommand.execute();
+		//cache
+
+//		HystrixCommand<ProductInfo> getProductInfoCommand = new GetProductInfoCommand(productId);
+//		ProductInfo productInfo = getProductInfoCommand.execute();
 		
-		Long cityId = productInfo.getCityId();
-		GetCityNameCommand getCityNameCommand = new GetCityNameCommand(cityId);
-		String cityName = getCityNameCommand.execute();
-		productInfo.setCityName(cityName); 
-		
+//		Long cityId = productInfo.getCityId();
+//		GetCityNameCommand getCityNameCommand = new GetCityNameCommand(cityId);
+//		String cityName = getCityNameCommand.execute();
+//		productInfo.setCityName(cityName);
+//
+		ProductInfo productInfo = new ProductInfo();
 		Long brandId = productInfo.getBrandId();
-		GetBrandNameCommand getBrandNameCommand = new GetBrandNameCommand(brandId);
+		GetBrandNameCommand getBrandNameCommand = new GetBrandNameCommand(1L);
 		String brandName = getBrandNameCommand.execute();
 		productInfo.setBrandName(brandName);
 		 
@@ -103,30 +103,30 @@ public class CacheController {
 //			
 //		});
 		
-//		for(String productId : productIds.split(",")) {
-//			GetProductInfoCommand getProductInfoCommand = new GetProductInfoCommand(
-//					Long.valueOf(productId)); 
-//			ProductInfo productInfo = getProductInfoCommand.execute();
-//			System.out.println(productInfo);
-//			System.out.println(getProductInfoCommand.isResponseFromCache()); 
-//		}
-		
-		List<Future<ProductInfo>> futures = new ArrayList<Future<ProductInfo>>();
-		
 		for(String productId : productIds.split(",")) {
-			GetProductInfosCollapser getProductInfosCollapser = 
-					new GetProductInfosCollapser(Long.valueOf(productId)); 
-			futures.add(getProductInfosCollapser.queue());
+
+			HystrixCommand<ProductInfo> getProductInfoCacheCommand = new GetProductInfoCacheCommand(Long.valueOf(productId));
+			ProductInfo productInfo = getProductInfoCacheCommand.execute();
+			System.out.println(productInfo);
+			System.out.println(getProductInfoCacheCommand.isResponseFromCache());
 		}
 		
-		try {
-			for(Future<ProductInfo> future : futures) {
-				System.out.println("CacheController的结果：" + future.get());  
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
+//		List<Future<ProductInfo>> futures = new ArrayList<Future<ProductInfo>>();
+//
+//		for(String productId : productIds.split(",")) {
+//			GetProductInfosCollapser getProductInfosCollapser =
+//					new GetProductInfosCollapser(Long.valueOf(productId));
+//			futures.add(getProductInfosCollapser.queue());
+//		}
+//
+//		try {
+//			for(Future<ProductInfo> future : futures) {
+//				System.out.println("CacheController的结果：" + future.get());
+//			}
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//
 		return "success";
 	}
 	

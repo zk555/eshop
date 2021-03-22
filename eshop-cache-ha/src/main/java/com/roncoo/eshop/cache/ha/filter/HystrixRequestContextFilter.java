@@ -24,7 +24,7 @@ public class HystrixRequestContextFilter implements Filter {
 	
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
-		HystrixRequestContext context = HystrixRequestContext.initializeContext();
+		HystrixRequestContext context = HystrixRequestContext.initializeContext();  //定义拦截器
 		try {
 			chain.doFilter(request, response); 
 		} catch (Exception e) {

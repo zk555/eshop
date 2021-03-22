@@ -20,8 +20,8 @@ public class GetProductInfosCollapser extends HystrixCollapser<List<ProductInfo>
 	public GetProductInfosCollapser(Long productId) {
 		super(Setter.withCollapserKey(HystrixCollapserKey.Factory.asKey("GetProductInfosCollapser"))
 				.andCollapserPropertiesDefaults(HystrixCollapserProperties.Setter()
-						   .withMaxRequestsInBatch(100)
-						   .withTimerDelayInMilliseconds(20))); 
+						   .withMaxRequestsInBatch(100)  // 请求数量到达100 batch发送
+						   .withTimerDelayInMilliseconds(20)));   // 等待时间到达20ms发送
 		this.productId = productId;
 	}
 	
