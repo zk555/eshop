@@ -54,20 +54,13 @@ public class KafkaMessageProcessor implements Runnable {
 	}
 	
 	/**
-	 * 处理商品信息变更的消息
+	 * 处理商品信息变更的消息 -- 重新构建缓存
 	 * @param messageJSONObject
 	 */
 	private void processProductInfoChangeMessage(JSONObject messageJSONObject) {
 		// 提取出商品id
 		Long productId = messageJSONObject.getLong("productId");
-		
-		// 调用商品信息服务的接口
-		// 直接用注释模拟：getProductInfo?productId=1，传递过去
-		// 商品信息服务，一般来说就会去查询数据库，去获取productId=1的商品信息，然后返回回来
-		
-		// 龙果有分布式事务的课程，主要讲解的分布式事务几种解决方案，里面也涉及到了一些mq，或者其他的一些技术，但是那些技术都是浅浅的给你搭建一下，使用
-		// 你从一个课程里，还是学到的是里面围绕的讲解的一些核心的知识
-		// 缓存架构：高并发、高性能、海量数据，等场景
+
 		
 		String productInfoJSON = "{\"id\": 5, \"name\": \"iphone7手机\", \"price\": 5599, \"pictureList\":\"a.jpg,b.jpg\", \"specification\": \"iphone7的规格\", \"service\": \"iphone7的售后服务\", \"color\": \"红色,白色,黑色\", \"size\": \"5.5\", \"shopId\": 1, \"modifiedTime\": \"2017-01-01 12:00:00\"}";
 		ProductInfo productInfo = JSONObject.parseObject(productInfoJSON, ProductInfo.class);
@@ -114,23 +107,16 @@ public class KafkaMessageProcessor implements Runnable {
 	}
 	
 	/**
-	 * 处理店铺信息变更的消息
+	 * 店铺信息变更--查询详情保存到缓存
 	 * @param messageJSONObject
 	 */
 	@SuppressWarnings("unused")
 	private void processShopInfoChangeMessage(JSONObject messageJSONObject) {
 		// 提取出商品id
 		Long productId = messageJSONObject.getLong("productId");
-		Long shopId = messageJSONObject.getLong("shopId"); 
-		
-		// 调用商品信息服务的接口
-		// 直接用注释模拟：getProductInfo?productId=1，传递过去
-		// 商品信息服务，一般来说就会去查询数据库，去获取productId=1的商品信息，然后返回回来
-		
-		// 龙果有分布式事务的课程，主要讲解的分布式事务几种解决方案，里面也涉及到了一些mq，或者其他的一些技术，但是那些技术都是浅浅的给你搭建一下，使用
-		// 你从一个课程里，还是学到的是里面围绕的讲解的一些核心的知识
-		// 缓存架构：高并发、高性能、海量数据，等场景
-		
+		Long shopId = messageJSONObject.getLong("shopId");
+
+
 		String shopInfoJSON = "{\"id\": 1, \"name\": \"小王的手机店\", \"level\": 5, \"goodCommentRate\":0.99}";
 		ShopInfo shopInfo = JSONObject.parseObject(shopInfoJSON, ShopInfo.class);
 		cacheService.saveShopInfo2LocalCache(shopInfo);

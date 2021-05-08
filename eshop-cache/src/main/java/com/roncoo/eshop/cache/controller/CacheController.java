@@ -53,9 +53,10 @@ public class CacheController {
 				System.out.println("=================从ehcache中获取缓存，商品信息=" + productInfo); 
 			}
 		}
-		
+
+		// 没有查询到缓存信息,需要通过调用商品服务进行查询
 		if(productInfo == null) {
-			// 就需要从数据源重新拉去数据，重建缓存，但是这里先不讲
+			//降级方案
 			GetProductInfoCommand command = new GetProductInfoCommand(productId);
 			productInfo = command.execute();
 			

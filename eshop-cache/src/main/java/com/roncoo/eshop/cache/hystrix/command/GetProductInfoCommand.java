@@ -5,7 +5,14 @@ import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
 import com.netflix.hystrix.HystrixThreadPoolProperties;
 import com.roncoo.eshop.cache.model.ProductInfo;
-
+/**
+ *功能：查询商品降级方案，商品服务-->Hbase
+ * @param null 1
+ * @version 0.0.1
+ * @return
+ * @author zhaokai108
+ * @date 2021/3/23 11:07
+ */
 public class GetProductInfoCommand extends HystrixCommand<ProductInfo> {
 
 	private Long productId;
@@ -43,8 +50,9 @@ public class GetProductInfoCommand extends HystrixCommand<ProductInfo> {
 		HBaseColdDataCommand command = new HBaseColdDataCommand(productId);
 		return command.execute();
 	}
-	
-	private class HBaseColdDataCommand extends HystrixCommand<ProductInfo> {
+
+	// 降级方案，查询其它资源
+	 private class HBaseColdDataCommand extends HystrixCommand<ProductInfo> {
 
 		private Long productId;
 		
